@@ -1,0 +1,21 @@
+
+.container {
+    display: flex;
+    gap: 1rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+aside, main {
+    height: 95vh;
+}
+
+aside {
+    flex-basis: 25%;
+    background-color: rgb(207, 173, 240);
+}
+
+main {
+    flex: 1;
+    background-color: rgb(236, 166, 166);
+}
