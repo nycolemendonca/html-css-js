@@ -1,0 +1,162 @@
+* { /* Formatação inicial da página, tipo um reset */
+    padding: 0; /* Espaçamento aplicado dentro do elemento */
+    margin: 0; /* Espaçamento aplicado fora do elemento */
+    box-sizing: border-box; /* Influencia o cálculo do tamanho do elemento. Garante que o elemento terá o tamanho exato que definimost */
+    text-decoration: none;
+    font: 14px sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* display flex: quando é configurado em um container, se transforma em um flex container. alinha todos os itens em linha */
+/* flex container: todos os itens se organizam em linha, ocupando de forma otimizada o espaço da linha no container */
+
+.instragram-wrapper {
+    display: flex;
+    align-items: center; /* alinhamento vertical */
+    justify-content: start; /* alinhamento horizontal */
+    width: 60%; /* Ocupa 60% do site */
+    height: 100vh;
+}
+
+.instagram-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%; /* Ocupa 50% do instagram-wrapper */
+}
+
+.instagram-phone img {
+    height: 50rem;
+}
+
+.instagram-continue {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%; /* Ocupa 50% do instagram-wrapper */
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%; /* width + padding + border = tamanho total do elemento*/
+    padding: 1.3rem 0; /* eixo x, eixo y*/
+    border: 1px solid lightgrey;
+}
+
+.group:nth-child(1){ /* Seleciona o elemento 1 de um mesmo grupo */
+    min-height: 19rem;
+}
+
+.instagram-logo {
+    height: 3rem;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    height: 6rem;
+}
+
+.instagram-login {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-logout {
+    columns: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account {
+    color: rgb(160, 160, 160);
+}
+
+.link-blue  {
+    color: #0095f6;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('img/apple-button.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('img/googleplay-button.png');
+}
+
+/* media queries */
+
+@media (max-width: 1024px) { /* desktop/notebook */
+    .instragram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) { /* smartphone */
+    body {
+        background-color: #ffffff;
+    }
+    
+    .instragram-wrapper {
+        width: 90%;
+    }
+
+    .group { 
+        border: 1px solid transparent;
+        
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+}
