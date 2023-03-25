@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-color: #b8b6b6;
+    position: sticky; /* O elemento é fixado ao rolar a página */
+    top: 0;
+    z-index: 1;
+}
+
+#nav-header {
+    width: 100%;
+    height: 50px;
+    background-color: aquamarine;
+}
+
+nav {
+    width: 30%;
+    height: 600px;
+    background-color: #e2e2e2;
+    float: left;
+}
+
+main {
+    width: 50%;
+    height: 600px;
+    background-color: antiquewhite; 
+    float: left;
+}
+
+#box-main {
+    width: 90%;
+    height: 160px;
+    background-color: rgb(164, 88, 235);
+    position: relative; /* O elemento é posicionado em relação ao elemento-pai */
+    top: 30px;
+    left: 30px;
+}
+
+.post {
+    padding: 2rem;
+}
+
+aside {
+    width: 20%;
+    height: 600px;
+    background-color: #e7cccc;
+    float: left;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: burlywood;
+    clear: both;
+    bottom: 0;
+}
+
+#btn-top {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(164, 88, 235);
+    position: fixed; /* A posição é fixada e a posição do elemento deve ser direcionada */ 
+    bottom: 70px;
+    right: 40px;
+}
