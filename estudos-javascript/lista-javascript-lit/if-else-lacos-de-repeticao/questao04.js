@@ -3,7 +3,7 @@
 function removerElementosDuplicados(lista) {
     const numerosUnicos = [];
 
-    // A iteração verifica se o número atual lista[i] já está na lista numerosUnicos usando o método includes(). Se o número não estiver na lista, o programa o adiciona usando o método push().
+    // A iteração verifica se o número atual 'lista[i]' já está na lista numerosUnicos usando o método includes(). Se o número não estiver na lista, o programa o adiciona usando o método push().
     for (let i = 0; i < lista.length; i++) {
         if (!numerosUnicos.includes(lista[i])) numerosUnicos.push(lista[i]);
     }

@@ -1,8 +1,5 @@
-/* Escreva um programa que verifique se uma palavra é um palíndromo um loop while
+/* Escreva um programa que verifique se uma palavra é um palíndromo usando um loop while.
     - Palíndromo: Sequência de caracteres que pode ser lido da esquerda para a direita e vice-versa, como o mesmo resultado.
-    - Deve-se ignorar pontuação, espaçamento e capitalização.
-
-    
 */
 
 function checarPalindromo(palavra) {
